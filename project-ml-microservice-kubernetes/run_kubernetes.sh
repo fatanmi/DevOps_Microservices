@@ -18,7 +18,7 @@ kubectl get pods
 
 # Step 4:
 # Forward the container port to a host
-#kubectl expose pod myflaskappnew1 --port=8000
+kubectl expose pod myflaskappnew2 --port=80
 
 #kubectl expose pod myflaskappnew --port=80  --target-port=8000
 
