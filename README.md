@@ -1,4 +1,4 @@
-[!fatanmi](https://circleci.com/gh/fatanmi/DevOps_Microservices.svg?style=svg)](https://app.circleci.com/pipelines/github/fatanmi/DevOps_Microservices)
+
 {<img src="https://circleci.com/gh/fatanmi/DevOps_Microservices.svg?style=svg" alt="fatanmi" />}[https://circleci.com/gh/fatanmi/DevOps_Microservices]
 
 ## Project Overview
