@@ -10,7 +10,7 @@ I was given a pre-trained, `sklearn` model that has been trained to predict hous
 
 ### Project Tasks
 
-Your project goal is to operationalize this working, machine learning microservice using [kubernetes](https://kubernetes.io/), which is an open-source system for automating the management of containerized applications. In this project you will:
+My project goal is to operationalize this working, machine learning microservice using [kubernetes](https://kubernetes.io/), which is an open-source system for automating the management of containerized applications. In this project I performed the following:
 * Test project code using linting
 * Complete a Dockerfile to containerize this application
 * Deploy containerized application using Docker and make a prediction
