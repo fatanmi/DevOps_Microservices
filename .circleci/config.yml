@@ -24,6 +24,7 @@ keys:
 - run:
 name: install dependencies
 command: |
+apt-get update && apt-get upgrade
 python3 -m venv venv
 . venv/bin/activate
 make install
