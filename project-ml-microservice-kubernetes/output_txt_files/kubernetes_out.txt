@@ -1,18 +1,32 @@
-AME                             READY   STATUS       
-      RESTARTS   AGE
-myflaskapp-6d9f7469b6-5qgld      1/1     Running      
-      0          10m
-myflaskapp2-67b4b9799d-bgfqk     0/1     ImagePullBackOff   0          9m44s
-myflaskappnew-84dbcc988-2q7m4    1/1     Running      
-      0          9m58s
-myflaskappnew1-bb7cdbc87-gwlh9   1/1     Running      
-      0          8m22s
-myflaskappnew2-8955cd65d-hs286   1/1     Running      
-      0          4m12s
+(.devops) ubuntu@master-node:~/ass/DevOps_Microservices/p 
+roject-ml-microservice-kubernetes$ kubectl get pods
+NAME         READY   STATUS    RESTARTS   AGE
+myflaskapp   1/1     Running   0          10m
 
-Port: 80
-{
-  "prediction": [
-    20.35373177134412
-  ]
-}
+
+
+NAME         READY   STATUS    RESTARTS   AGE
+myflaskapp   1/1     Running   0          44m
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.   
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 194-414-639
+[2020-05-27 05:12:01,435] INFO in app: JSON payload: 
+{'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 
+15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
+[2020-05-27 05:12:01,449] INFO in app: Inference payload DataFrame:
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2020-05-27 05:12:01,459] INFO in app: Scaling Payload: 
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2020-05-27 05:12:01,463] INFO in app: [20.35373177134412]
+127.0.0.1 - - [27/May/2020 05:12:01] "POST /predict HTTP/1.1" 200 -
