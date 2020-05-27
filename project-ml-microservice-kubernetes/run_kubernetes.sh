@@ -9,7 +9,7 @@
 dockerpath=haryorbami/myflaskapp
 # Step 2
 # Run the Docker Hub container with kubernetes
-kubectl create deployment myflaskappnew2 --image=$dockerpath
+kubectl create deployment myflaskappnew --image=$dockerpath
 
 # Step 3:
 # List kubernetes pods
@@ -18,7 +18,7 @@ kubectl get pods
 
 # Step 4:
 # Forward the container port to a host
-kubectl expose pod myflaskappnew2 --port=80
+kubectl port-forward deployment/myflaskappnew 8000:80
 
 #kubectl expose pod myflaskappnew --port=80  --target-port=8000
 
